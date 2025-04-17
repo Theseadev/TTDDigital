@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanda Tangan Digital dengan Color Picker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Buat Tanda Tangan Digital</h2>
+<canvas id="signature-pad"></canvas>
+
+<div class="color-picker" id="colorPicker">
+  <div class="color-option active" data-color="#000000" style="background:#000000;"></div>
+  <div class="color-option" data-color="#0052cc" style="background:#0052cc;"></div>
+  <div class="color-option" data-color="#13294b" style="background:#13294b;"></div>
+  <div class="color-option" data-color="#6DA34D" style="background:#6DA34D;"></div>
+  <div class="color-option" data-color="#C62828" style="background:#C62828;"></div>
+  <div class="custom-color">
+    <input type="color" id="colorPickerInput">
+  </div>
+</div>
+
+<div class="buttons">
+  <button onclick="downloadSignature()">SAVE</button>
+  <button class="clear" onclick="clearSignature()">CLEAR</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/signature_pad@4.0.0/dist/signature_pad.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
